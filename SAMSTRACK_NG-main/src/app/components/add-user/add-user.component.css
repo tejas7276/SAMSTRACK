@@ -1,0 +1,57 @@
+/* Gradient Background (Matching Welcome Page) */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #6b93d6);
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Form Wrapper */
+.add-user-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form Container */
+.container {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.15); /* Slightly transparent */
+  padding: 40px; /* Increased for better spacing */
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.form-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Input Fields */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+}
+
+/* Submit Button */
+.btn-primary {
+  background: #3498db; /* Soft, neutral blue */
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #2c81c0; /* Slightly darker blue */
+}

@@ -1,0 +1,65 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #6b93d6);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Login Button in Top Right Corner */
+.login-container {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.login-btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+
+/* Welcome Content */
+.welcome-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Welcome Image */
+.welcome-image {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.welcome-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 0 15px;
+}

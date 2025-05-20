@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(90deg, #b387e2, #5a1fce);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-header {
+  background: #2575fc;
+  color: white;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.btn-primary {
+  background: #6a11cb;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #2575fc;
+}

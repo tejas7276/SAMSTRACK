@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: #2575fc;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+th, td {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
+
+.btn-info {
+  background: #17a2b8;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-info:hover {
+  background: #138496;
+}
+
+.btn-danger {
+  background: #dc3545;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+}

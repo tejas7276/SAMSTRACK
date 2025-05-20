@@ -1,0 +1,64 @@
+<app-faculty-menu></app-faculty-menu>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take Attendance</title>
+</head>
+<body>
+  <div class="attendance-container">
+    <h2 class="text-center">Take Attendance</h2>
+
+    <!-- First Row: Subject, Date, and Time -->
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <label for="subject" class="form-label">Select Subject</label>
+        <select id="subject" class="form-select" (change)="changeSubject($event)">
+          <option value="">Select Subject</option>
+          <option *ngFor="let subject of subjects" [value]="subject.id">{{ subject.name }}</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label for="date" class="form-label">Date</label>
+        <input type="date" id="date" class="form-control"(change)="changeDate($event)">
+      </div>
+      <div class="col-md-4">
+        <label for="time" class="form-label">Time</label>
+        <input type="time" id="time" class="form-control" (change)="changeTime($event)">
+      </div>
+    </div>
+
+   <!-- Student Attendance Table -->
+  <div class="table-container">
+    <table class="table table-bordered text-center">
+      <thead class="table-dark">
+        <tr>
+          <th>Student Name</th>
+          <th>
+            <input type="checkbox" id="selectAll"  (change)="toggleAll($event)">
+
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.name }}</td>
+          <td>
+            <input
+              type="checkbox"
+              [checked]="selectedStudents.includes(student.id)"
+              (change)="toggleStudent(student.id)">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Submit Button -->
+  <button class="btn btn-primary mt-3 w-100" (click)="submitAttendance()">Submit Attendance</button>
+</div>
+
+</body>
+</html>

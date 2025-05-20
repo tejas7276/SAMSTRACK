@@ -1,0 +1,58 @@
+/* Full-screen gradient background */
+body {
+  background: linear-gradient(135deg, #4a90e2, #14549e);
+  font-family: Arial, sans-serif;  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Attendance Container */
+.attendance-container {
+  width: 80%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Table Container */
+.table-container {
+  margin-top: 15px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Centering Table */
+.table {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.table-dark {
+  background: #343a40;
+  color: white;
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* Button Styling */
+.btn-primary {
+  background: #2575fc;
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #1e5bcc;
+}
