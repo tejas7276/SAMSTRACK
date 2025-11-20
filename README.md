@@ -4,8 +4,6 @@
 
 A full-stack web application built to automate and manage student attendance in educational institutions. SAMSTRACK simplifies attendance tracking for faculty while ensuring secure and accurate data handling.
 
----
-
 ## 🚀 Tech Stack
 
 | Layer     | Technology                            |
